@@ -55,6 +55,7 @@ public class testController {
     @GetMapping("/download")
     private void download(HttpServletResponse response) {
         List<User> list = userMapper.list();
+        System.out.println("xxxxxxxxx");
 
         // 写法1
         String fileName = System.currentTimeMillis() + ".xlsx";
